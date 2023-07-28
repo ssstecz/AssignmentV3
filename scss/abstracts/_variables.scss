@@ -1,0 +1,23 @@
+// Base font sizes (html) for various screen sizes
+$base-font-size-sm: 50%; // 8 / 16  ~ 8px
+$base-font-size-md: 56.25%; // 9 / 16  ~ 9px
+$base-font-size-lg: 62.5%; // 10 / 16  ~ 10px
+$base-font-size-xl: 75%; // 12 / 16  ~ 12px
+
+// GRID LAYOUT ======================== //
+
+// Grid variables
+$gutter-padding-horizontal: 1.5rem; // 15px
+$gutter-margin-vertical: 2rem; // 20px
+
+// Breakpoints
+$sm: 0em;
+$md: 34.5625em; // 553px / 16px
+$lg: 56.3125em; // 901px / 16px
+$xl: 87.5625em; // 1401px / 16px
+
+// Breakpoint - max-width for container
+$width-container-sm: 60%;
+$width-container-md: 85%;
+$width-container-lg: 123.3rem; // 1233px = 1233px (desired max-width) / 10px (base font size) ~ 123.3rem
+$width-container-xl: 130rem; // 1560px = 1560px (desired max-width) / 12px (base font size) ~ 130rem

@@ -1,0 +1,177 @@
+:root {
+  --success-color: #23cc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  background: linear-gradient(-90deg, #77353D, #9D2235);
+  height: 80px;
+  margin-bottom: 25px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+}
+
+.container {
+  width: 60%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+@media screen and (min-width: 34.5625em) {
+  .container {
+    width: 85%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 56.3125em) {
+  .container {
+    max-width: 123.3rem;
+  }
+}
+@media screen and (min-width: 87.5625em) {
+  .container {
+    max-width: 130rem;
+  }
+}
+
+.container-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 80%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.navbar-brand {
+  color: white;
+  text-align: left;
+}
+
+[class*=flex-] {
+  width: 80%;
+  max-width: 80%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  min-height: 0.1rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  position: relative;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.28);
+}
+
+.delete-checkbox {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  text-align: left;
+}
+
+.btn-group .btn {
+  margin: 5px;
+  padding: 5px;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: px solid #ccc;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  min-height: 0.1rem;
+}
+
+.form-control {
+  margin-bottom: 0.625rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form-control modal {
+  visibility: hidden;
+}
+
+.form-control.error modal {
+  visibility: visible;
+}
+
+.resp {
+  color: var(--error-color);
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=main.css.map */

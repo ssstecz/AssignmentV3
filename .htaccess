@@ -1,0 +1,11 @@
+
+# HTID:21717782: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:21717782:
+RewriteEngine On
+
+# Rewrite https://files.000webhost.com/ to index.php
+RewriteRule ^$ index.php [L]
+
+# Rewrite https://files.000webhost.com/addproduct/ to index2.php
+RewriteRule ^addproduct/?$ index2.php [L]

@@ -1,0 +1,39 @@
+// GRID
+@mixin grid($number) {
+  $percentage: (100 / $number) * 1%;
+  flex: 0 0 $percentage;
+  max-width: $percentage;
+}
+
+// $breakpoints
+//   - (sm) phone = 0 - 552px
+//   - (md) phone-land & tablet-port = 553 - 900px
+//   - (lg) tablet-land & laptops = 901 - 1400px
+//   - (xl) large desktops (FHD...) = 1401px
+//   1em = 16px
+
+@mixin respond($breakpoint) {
+  @if $breakpoint ==sm {
+    @media screen and (min-width: $sm) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==md {
+    @media screen and (min-width: $md) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==lg {
+    @media screen and (min-width: $lg) {
+      @content;
+    }
+  }
+
+  @if $breakpoint ==xl {
+    @media screen and (min-width: $xl) {
+      @content;
+    }
+  }
+}
